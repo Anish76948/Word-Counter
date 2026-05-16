@@ -1,20 +1,26 @@
 body {
-    font-family: "JetBrains Mono" !important;
-    color: #ffffff !important;
-    background-color: #000000 !important;
-    background-image: url("https://www.xmple.com/wallpaper/beehive-honeycomb-gray-hexagon-turquoise-1920x1080-c2-111111-222222-l2-40-459-a-0-f-5.svg");
+    font-family: "JetBrains Mono", monospace;
+    color: #ffffff;
+    background-color: #0f172a; /* dark blue tone */
+    background-image: linear-gradient(to right, #0f172a, #1e293b);
 }
 
+
 .form-control {
-    color: #ffffff !important;
-    border: 2px solid #ffffff !important;
-    border-radius: 12px !important;
-    background-color: transparent !important;
-    transition: 0.5s !important;
+    color: #ffffff;
+    border: 2px solid #38bdf8;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
 }
 
 .form-control:focus {
-    box-shadow: 0 0 0 0.25rem #ef9b0f !important;
+    box-shadow: 0 0 10px #38bdf8;
+    border-color: #38bdf8;
 }
 
 .field {
@@ -25,27 +31,35 @@ body {
     position: relative;
     float: right;
     cursor: pointer;
-    border: 2px solid #ffffff !important;
-    padding: 4px 10px;
-    border-radius: 12px;
-    margin: 16px 16px -16px 0;
-    transition: 0.5s;
+    border: 2px solid #ef4444;
+    padding: 5px 12px;
+    border-radius: 10px;
+    margin: 10px 10px -10px 0;
+    transition: 0.3s;
+    color: #ffffff;
 }
 
 .btn-clear:hover {
     transform: scale(1.05);
-    background-color: #ff0000 !important;
+    background-color: #ef4444;
 }
 
 .page_title {
     text-align: center;
-    margin: 20px 0 40px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    color: #94a3b8;
 }
 
 #word_counter,
 #character_counter,
 #line_counter {
-    font-size: 24px;
-    color: #00ffbb;
+    font-size: 22px;
+    color: #22c55e;
     font-weight: bold;
+    padding: 10px;
 }
